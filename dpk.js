@@ -10,12 +10,12 @@ exports.deterministicPartitionKey = (event) => {
     candidate = event.partitionKey || createHash(data);
   }
 
-  if (typeof candidate !== "string"){
-    candidate = JSON.stringify(candidate);
-  }
-
   if (!candidate) {
     candidate = TRIVIAL_PARTITION_KEY;
+  }
+
+  if (typeof candidate !== "string"){
+    candidate = JSON.stringify(candidate);
   }
 
   if (candidate.length > MAX_PARTITION_KEY_LENGTH) {
