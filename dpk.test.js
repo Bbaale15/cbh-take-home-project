@@ -21,4 +21,9 @@ describe("deterministicPartitionKey", () => {
     const expected = "1";
     expect(trivialKey).toBe(expected);
   });
+
+  it("should return a string value", () => {
+    const trivialKey = deterministicPartitionKey(1);
+    expect(typeof trivialKey).toBe("string")
+  });
 });
