@@ -24,7 +24,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 4. Replace internal database id with new Custom Id for Agents on the generated PDF report.
 
 ## Implementation
-1. Update Agents Table to include new Custom Id field.
+### 1. Update Agents Table to include new Custom Id field.
 
 ### Tasks
 - Create new `varchar(100)` field in Agents Table named Custom_Id.
@@ -36,7 +36,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ### Estimated Time
 - 1 hour
 
-2. Add provision for facilities to save/update Custom Id for each Agent they work with.
+### 2. Add provision for facilities to save/update Custom Id for each Agent they work with.
 
 ### Tasks
 - Update create Agent form to include new input to capture Custom ID.
@@ -53,7 +53,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ### Estimated Time
 - 6 hours
 
-3. Update `getShiftsByFacility` function to return Agents metadata with new Custom Id.
+### 3. Update `getShiftsByFacility` function to return Agents metadata with new Custom Id.
 ### Tasks
 - Include Custom_Id field in the returned metadata for Agents in the `getShiftsByFacility` function.
 
@@ -63,7 +63,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ### Estimated Time
 - 3 hours
 
-4. Replace internal database id with new Custom Id for Agents on the generated PDF report.
+### 4. Replace internal database id with new Custom Id for Agents on the generated PDF report.
 
 ### Tasks
 - Update `generateReport` function to replace internal database id for Agents with the new Custom_Id for Agents on the report after converting to PDF.
