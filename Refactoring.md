@@ -9,3 +9,6 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+
+It's always a good practise to avoid unnecessary nested IF/Else statements. I did this by checking if there's not a candidate and just immediately assign candidate to TRIVIAL_PARTITION_KEY. With the else block removed and added spacing between if statements the code if much more simpler to understand and read.
